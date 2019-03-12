@@ -125,6 +125,24 @@
         user-select: none;
     }
 
+    #endBTN2{
+        position:absolute;
+        top: 2%;
+        left:2%;    
+        width:10%;
+        height:10%;
+        background-color: darkred;
+        user-select: none;
+        border-radius: 0%;
+        cursor: pointer;
+        color: white;
+        display: block;
+    }
+    
+    
+    
+    
+    
     #playagainBTN {
         position: absolute;
         top: 50%;
@@ -152,7 +170,9 @@
         <div id="flowerSeed"></div>
         <div id="endBTN"> Exit </div>
     </div>
-    <div id="workScreen"></div>
+    <div id="workScreen">
+    <div id="endBTN2">Exit</div>
+    </div>
     <div id="endScreen">Thanks for playing!
         <div id="playagainBTN"> Play Again? </div>
     </div>
@@ -179,11 +199,12 @@
         myWorkBTN.style.textAlign = "center"
         myWorkBTN.addEventListener("click", hideWorkShow, false);
         
+       
         
         var myDirections;
         myDirections = document.querySelector("#directions");
         myDirections.style.fontSize = "2.5em";
-        myDirections.style.textAlign = "center"
+        myDirections.style.textAlign = "center";
         
         
         var myShovel;
@@ -196,7 +217,7 @@
         var mySeed;
         mySeed = document.querySelector("#flowerSeed");
         var myWorkScreen
-        myWorkScreen = document.querySelector("#workScreen")
+        myWorkScreen = document.querySelector("#workScreen");
         
         
         var myEndScreen;
@@ -212,6 +233,11 @@
         myEndBTN.style.textAlign = "center";
         myEndBTN.addEventListener("click", hideGameShow, false);
         
+        var myEndBTN2;
+        myEndBTN2 = document.querySelector("#endBTN2");
+        myEndBTN2.style.fontSize = "1.5em";
+        myEndBTN2.style.textAlign = "center";
+        myEndBTN2.addEventListener = ("click", hideWorkFlow, false);
         
         var myplayagainBTN;
         myplayagainBTN = document.querySelector("#playagainBTN");
@@ -219,6 +245,8 @@
         var myPositionY = 0;
         var mouseClicks = 0;
 
+        
+        
         function plantSeed() {
             myPositionY = myPositionY + 10;
             mySeed.style.transform = "translateY(" + myPositionY + "%)";
@@ -248,6 +276,11 @@
             myWorkScreen.style.display = "block";
         }
 
+        function hideWorkFlow() {
+            myWorkScreen.style.display = "none";  
+            myGameScreen.style.display = "block";  
+        }
+        
         function hideEndShow() {
             myEndScreen.style.display = "none";
             myStartScreen.style.display = "block";
