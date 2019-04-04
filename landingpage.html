@@ -1,0 +1,317 @@
+<!doctype html>
+<html>
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">    
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink to fit=no">   
+<!--Botstrap CSS -->   
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+<title>ArrowHead.</title>
+</head>
+    
+<style>
+    
+    
+    
+    
+    
+    h1{ color: #BB0000;}
+    
+    #affiliation{
+            margin-top: 10px;
+            margin-bottom: 0;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+            background-color: black;
+            color: gray;
+            text-decoration: none;
+            text-decoration-color: darkkhaki;
+    }
+    
+    #blockquote{
+        color:black;
+    }
+    
+    #blockquotetext{
+        position: absolute;
+        top: 150%
+    }
+    
+    
+     #introduction_header{
+            position: absolute;
+            top: 10vw;
+            left: 10vw;
+            width: 75vw;
+            opacity: 0;
+            font-size: 2em;
+            font-family: 'Abel';
+            animation: introduction 10s 3;
+        }
+    
+      @keyframes introduction {
+            0%{transform: translateX(-50vw); opacity: 0;}
+            20% {transform: translateX(0vw); opacity: 1;}
+            80% {transform: translateX(0vw); opacity: 1;}
+            100%{transform: translateX(-50vw); opacity: 0;}
+        }
+    
+    
+     #pointer {
+            position: absolute;
+            top:25vw;
+            left: 50vw;
+            width: 50px;
+            height: 50px;
+            border: 3px solid lightgreen;
+            border-radius: 50%;
+            filter: drop-shadow(1px 1px 1px black);
+            font-size: 1em;
+            line-height: calc(50px - 0.5em);
+            text-align: center;
+            opacity: 0;
+            animation: blinking 2s 3s;
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</style>
+    
+<body>
+    <div class="jumbotron">
+    <h1>ArrowHead.</h1>
+    <p> An app for improving at archery!</p>
+    <hr>
+    <p> <b>ArrowHead</b> is an app designed to bring archers of all ages and skill levels together.</p>
+    <p><b>The Goal</b> is to <b>bring together</b> novice archers or people thinking of getting into archery and experinced/professional archers to mentor and help them improve their skills and technique.</p>
+    <p><b>Mentors</b> are available for both <b>Compound Archery</b> and <b>Traditional Archery</b></p>
+    <p><b>ArrowFinder</b> is a feature that finds archery clubs and ranges for users to regularly practice if they do not personally have the space</p>  
+    </div>
+    
+    <div class="container">
+    Main Features of ArrowHead
+        <div class="row">
+          <div class="col-sm-4">
+              <a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+              <img src="/.compound.png" width="200" height="200" class="figure-img img-fluid rounded" alt="Compound Archery"> 
+                <br> Find A Compound Archery Mentor! 
+              </a>
+    </div>
+<div class="col-sm-4">
+<a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+    <img src="/.traditional.png" width="200" height="200" class="figure-img img-fluid rounded" alt="Traditional Archery"> 
+    <br> Find A Traditional Archery Mentor!
+    </a>            
+</div>
+ <div class="col-sm-4">
+<a class="btn btn-link" role="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">
+<img src="/.arrowfinder.png" width="200" height="200" class="figure-img img-fluid rounded" alt="Arrow Finder">
+    <br> Find a club / range near you!
+ </a>         
+</div>        
+        </div>            
+<div class="row">
+ <div class="col-sm-4">
+    <div class="collapse multi-collapse" id="multiCollapseExample1">
+     <div class="card card body">
+        Filler Text
+        </div>
+     </div>
+    </div>  
+    <div class="col-sm-4">
+     <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+            Filler Text
+         </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+       <div class="collapse multi-collapse" id="multiCollapseExample3">
+        <div class="card card-body">
+            Filler Text
+           </div>
+        </div>
+    </div>  
+  </div>            
+</div>
+
+<div class="card text-white mb-3" style="margin-top: 50px;">
+  <img class="card-img-top"
+    src="https://img.grouponcdn.com/iam/nkKNf9vTEzfS65GM8jYy/5n-2048x1229/v1/c700x420.jpg">
+      <div class="card-img-overlay">
+      <blockquote class="blockquote text-center" id="blockquotetext" style="position: absolute; width:100%; top: 40%;">
+          <p class="mb-0" id="blockquote">  "Practice is everything.<br>Consistancy in your form and shot are everything.<br> If you can master proper technique you will be succesful."</p>
+          <footer class="blockquote-footer" id="blockfooter">Quote from <cite title="Source">Ken Wood</cite></footer>
+          </blockquote>
+        </div>
+    </div>
+  
+ <hr>   
+    
+<div class="container-fluid" style="margin-top: 50px;">
+    <h2>Design Process</h2>
+    <h6>The design process behind ArrowHead.</h6>
+<div class="accordion" id="accordionExample">   
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            
+        User Research &#38; Interviews
+          
+          </button>
+        </h5>
+      </div>
+      
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        <p class="user-research">
+          I interviewed a few friends, One of which is thinking about starting in archery, and one who has been shooting archery since he was a small child. Here's what they said..
+            <br>
+            <br>       
+          Q: What is the biggest hold up for someone thinking about getting into archery<br>
+            <i>A: "Equipment is expensive, many people don't know what exactly they even need, and many people don't have the space to shoot regularly.</i><br>
+            <br> 
+         Q: What is the biggest key to becoming a succesful archer?<br> 
+          <i>A: "Practice is everything. Consistancy in your form and shot are everything. If you can master proper technique you will be succesful."</i><br>
+          <br>
+         Q: Why would someone want to get into archery?<br>    
+            <i>A: "It's a good way to pass the time, or relieve stress. Many people get into it for hunting, but if that's not your thing it's a great hobby, and if you're a competitive spirit there are plenty of competitions to go to" </i>
+          </p>
+          </div>
+      </div>
+    </div>
+  <div class="card">
+    <div class="card-header" id="heading2">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Brainstorming
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+        <div class="card-body">
+          <p class="brainstorming">
+            I got the idea for ArrowHead because I am what I consider an intermediate level archer, and I rarely have friends to shoot with, many friends of mine have said they would like to get into the sport, but they either can't afford it, don't have space, or don't know where to begin on how to shoot a bow. <b>The Goal</b> of ArrowHead is to mitigate these issues as much as possible by connecting expiercned archers with those either new to, or wanting to get in the sport.
+            </p>
+          </div>
+      </div>
+    </div>  
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Ideation
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+        <div class="card-body">
+            <p class="ideation"> Filler Text </p>
+          </div>
+      </div>   
+    </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">>
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Wireframes and Workflow
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        <p class="wireframes">Filler Text</p>
+          
+          </div>
+      </div>
+    </div>
+  <div class="card">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Graphical User Interface
+          </button>
+        </h5>
+      </div>
+      <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="accordionExample">
+      <div class="card-body">
+      <p class="GUI">Filler Text</p>    
+      </div>
+    </div>
+    </div>    
+  
+  <div class="card">
+    <div class="card-header" id="headingSix">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Pitch
+          </button>
+        </h5>
+      </div>
+      <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+          ArrowHead will make you a better archer by finding you a mentor for both compound and traditional archery as well as find places for you to practice and become more consistant!
+          </div>
+      </div>
+     </div>    
+    </div>
+    
+ <hr>
+    
+  <h3 style="margin-top: 50px;">Pitch Video Presentation</h3>
+    <div class="card" style="width: 100%; border-style: none;"> 
+    <div class="card-body">
+        This video will show you why you should be using <b>ArrowHead.</b>
+      </div>
+        <figure class="figure-text-center">
+          <iframe src="" width="100%" height="800" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen alt="Pitch Video">
+            
+            </iframe>
+              <figcaption class="figure-caption text-center">
+            </figcaption>
+        </figure> 
+    </div>
+</div>    
+   
+    <footer id="affiliation">
+      <address>
+        <small>
+          <b>Tanner Croft</b> at NKU.edu
+          <br>
+          <b>Undefined Interactivity, Lab.</b><br>
+          400 Nunn Dr. Griffin Hall<br>
+          Highland Heights, KY, 41099<br> 
+          Northern Kentucky University<br>
+          </small>
+        </address>
+    </footer>
+    
+ <!--Optional JavaScript -->   
+ <!--jQuery first, then popper.js, then Bootstrap JS -->    
+    
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+</body>
+    
+</html>
