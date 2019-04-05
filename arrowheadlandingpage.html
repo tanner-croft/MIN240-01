@@ -24,8 +24,8 @@
             padding-top: 50px;
             padding-bottom: 50px;
             text-align: center;
-            background-color: black;
-            color: gray;
+            background-color: gold;
+            color: black;
             text-decoration: none;
             text-decoration-color: darkkhaki;
     }
@@ -39,6 +39,9 @@
         top: 150%
     }
     
+    #blockfooter{
+        color: goldenrod;
+    }
     
      #introduction_header{
             position: absolute;
@@ -73,31 +76,103 @@
             text-align: center;
             opacity: 0;
             animation: blinking 2s 3s;
+    }
     
+    #ResearchBtn{
+        position: relative;
+        left: 42.5%;
+        text-align: center;
+        color: darkgoldenrod;
+    }
     
+    #ResearchCard{
+        position: relative;
+        text-align: center;
+    }
     
+    #BrainstormingBtn{
+        position: relative;
+        left: 44%;
+        text-align: center;
+        color: darkgoldenrod;
+    }
     
+    #BrainstormingCard{
+        position: relative;
+        text-align: center;
+    }
     
+    #IdeationBtn{
+        position: relative;
+        left: 45%;
+        text-align: center;
+        color: darkgoldenrod;
+    }
     
+    #IdeationCard{
+        position: relative;
+        text-align: center;
+    } 
     
+    #WireframeBtn{
+        position: relative;
+        left: 42.5%;
+        text-align: center;
+        color: darkgoldenrod;
+    }
     
+    #WireframeCard{
+        position: relative;
+        text-align: center; 
+    }
     
+    #GUIbtn{
+        position: relative;
+        left: 42.5%;
+        text-align: center;
+        color: darkgoldenrod;
+    }
     
+    #GUIcard{
+        position: relative;
+        text-align: center;
+        
+    }
     
+    #PitchBtn{
+        position: relative;
+        left: 45.5%;
+        text-align: center;
+        color: darkgoldenrod;
+        
+    }
     
+    #PitchCard{
+        position: relative;
+        text-align: center;
+        
+    }
     
+    #DownloadBtn{
+        position: relative;  
+    }
     
-    
-    
-    
+    #jumbo{
+        position: relative;
+        text-align: center;
+        
+        
+        
+    }
     
     
 </style>
     
 <body>
-    <div class="jumbotron">
+    <div class="jumbotron" id="jumbo">
     <h1>ArrowHead.</h1>
     <p> An app for improving at archery!</p>
+    <a class="btn btn-info btn-lg" id="DownloadBtn" href="#" role="button">Download ArrowHead Today!</a>    
     <hr>
     <p> <b>ArrowHead</b> is an app designed to bring archers of all ages and skill levels together.</p>
     <p><b>The Goal</b> is to <b>bring together</b> novice archers or people thinking of getting into archery and experinced/professional archers to mentor and help them improve their skills and technique.</p>
@@ -156,7 +231,7 @@
   <img class="card-img-top"
     src="https://img.grouponcdn.com/iam/nkKNf9vTEzfS65GM8jYy/5n-2048x1229/v1/c700x420.jpg">
       <div class="card-img-overlay">
-      <blockquote class="blockquote text-center" id="blockquotetext" style="position: absolute; width:100%; top: 40%;">
+      <blockquote class="blockquote text-center" id="blockquotetext" style="position: absolute; width:100%; left:-3%; top:85%;">
           <p class="mb-0" id="blockquote">  "Practice is everything.<br>Consistancy in your form and shot are everything.<br> If you can master proper technique you will be succesful."</p>
           <footer class="blockquote-footer" id="blockfooter">Quote from <cite title="Source">Ken Wood</cite></footer>
           </blockquote>
@@ -172,7 +247,7 @@
   <div class="card">
     <div class="card-header" id="headingOne">
       <h5 class="mb-0">
-        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <button class="btn btn-link" id="ResearchBtn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
             
         User Research &#38; Interviews
           
@@ -181,7 +256,7 @@
       </div>
       
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body" id="ResearchCard">
         <p class="user-research">
           I interviewed a few friends, One of which is thinking about starting in archery, and one who has been shooting archery since he was a small child. Here's what they said..
             <br>
@@ -201,14 +276,14 @@
   <div class="card">
     <div class="card-header" id="heading2">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+        <button class="btn btn-link collapsed" id="BrainstormingBtn" type="button" data-toggle="collapse"
         data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
           Brainstorming
           </button>
         </h5>
       </div>
       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-        <div class="card-body">
+        <div class="card-body" id="BrainstormingCard">
           <p class="brainstorming">
             I got the idea for ArrowHead because I am what I consider an intermediate level archer, and I rarely have friends to shoot with, many friends of mine have said they would like to get into the sport, but they either can't afford it, don't have space, or don't know where to begin on how to shoot a bow. <b>The Goal</b> of ArrowHead is to mitigate these issues as much as possible by connecting expiercned archers with those either new to, or wanting to get in the sport. The primary target user would be younger people (10-15 years old) to get them in the sport, but would also encourage older people to get into archery.
             </p>
@@ -218,27 +293,27 @@
   <div class="card">
     <div class="card-header" id="headingThree">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <button class="btn btn-link collapsed" id="IdeationBtn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
           Ideation
           </button>
         </h5>
       </div>
       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-        <div class="card-body">
+        <div class="card-body" id="IdeationCard">
             <p class="ideation"> I got the idea of using technology through the form of a mobile / web app where novice archers could find mentors and expiernce archers can sign up / be aproved to be mentors </p>
           </div>
       </div>   
     </div>
   <div class="card">
-    <div class="card-header" id="headingFour">>
+    <div class="card-header" id="headingFour">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        <button class="btn btn-link collapsed" id="WireframeBtn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
           Wireframes and Workflow
           </button>
         </h5>
       </div>
       <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body" id="WireframeCard">
         <p class="wireframes">Filler Text</p>
           
           </div>
@@ -247,13 +322,13 @@
   <div class="card">
     <div class="card-header" id="headingFive">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        <button class="btn btn-link collapsed" id="GUIbtn" type="button" data-toggle="collapse" data-target="collapseFive" aria-expanded="false" aria-controls="collapseFive">
           Graphical User Interface
           </button>
         </h5>
       </div>
       <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="accordionExample">
-      <div class="card-body">
+      <div class="card-body" id="GUIcard">
       <p class="GUI">Filler Text</p>    
       </div>
     </div>
@@ -262,13 +337,13 @@
   <div class="card">
     <div class="card-header" id="headingSix">
       <h5 class="mb-0">
-        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+        <button class="btn btn-link collapsed" id="PitchBtn" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
           Pitch
           </button>
         </h5>
       </div>
       <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
-      <div class="card-body">
+      <div class="card-body" id="PitchCard">
           ArrowHead will make you a better archer by finding you a mentor for both compound and traditional archery as well as find places for you to practice and become more consistant!
           </div>
       </div>
