@@ -47,11 +47,11 @@
         background-color: #490101;
         position: absolute;
         text-align: center;
-        left: 45.5%;
-        top: 15%;
+        left: 46%;
+        top: 13%;
         z-index: 10;
         width: 10%;
-        height: 3.8%
+        height: 4%;
     }
     
     #landingpagelink{
@@ -59,8 +59,8 @@
         font-size: 1.5em;
         color: goldenrod;
         cursor: pointer;
-        position: relative;
-        
+        position: absolute;
+        left: 10%;
     }
     
     
@@ -130,7 +130,7 @@
     }
 
     #lessonsearch {
-        position: relative;
+        position: absolute;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -141,7 +141,7 @@
     }
 
     #rangesearch {
-        position: relative;
+        position: absolute;
         margin-left: auto;
         margin-right: auto;
         width: 100%;
@@ -473,12 +473,12 @@
         
         $(document).ready(function() {
             $("#ps").on('click', function() {
-                $("#proshopsearch").toggle()
-                $("#profind").toggle();
+                $("#proshopsearch").toggle(1000)
+                $("#profind").toggle(1000);
             });
 
             $("#profind").on('click', function() {
-                $("#profound").toggle();
+                $("#profound").toggle(1000);
             });
 
 
@@ -486,12 +486,12 @@
 
 
             $("#less").on('click', function() {
-                $("#lessonsearch").toggle()
-                $("#findlessons").toggle();
+                $("#lessonsearch").toggle(1000)
+                $("#findlessons").toggle(1000);
             });
 
             $("#findlessons").on('click', function() {
-                $("#foundlessons").toggle();
+                $("#foundlessons").toggle(1000);
             });
 
 
@@ -499,12 +499,12 @@
 
 
             $("#range").on('click', function() {
-                $("#rangesearch").toggle()
-                $("#findrange").toggle();
+                $("#rangesearch").toggle(1000)
+                $("#findrange").toggle(1000);
             });
 
             $("#findrange").on('click', function() {
-                $("#foundrange").toggle();
+                $("#foundrange").toggle(1000);
             });
 
         });
@@ -514,5 +514,6 @@
 </body>
 
 </html>
+
 
 
